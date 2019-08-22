@@ -26,18 +26,18 @@ class AuthController extends Controller
             return response(['errors'=>$validator->errors()->all()], 422);
         }
     
-        $request['password']=Hash::make($request['password']);
         $user = new User();//::create($request->toArray());
         $user->name = $request->name;
         $user->lastname = $request->lastname;
         $user->email = $request->email;
+        $user->role_id = 3;
         $user->password = Hash::make($request['password']);
         $user->save();
     
         $token = $user->createToken('Laravel Password Grant Client')->accessToken;
-        $response = ['token' => $token];
+        $response = ['token' => $token,'user'=>$user];
     
-        return response($response, 200);
+        return response()->json($response, 200);
     
     }
 
@@ -69,7 +69,7 @@ class AuthController extends Controller
         $token->revoke();
     
         $response = 'You have been succesfully logged out!';
-        return response($response, 200);
+        return response()->json($response, 200);
     
     }
 }
