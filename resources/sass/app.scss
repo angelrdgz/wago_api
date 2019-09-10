@@ -1,6 +1,6 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Nunito");
-@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
 
 // Variables
 @import "variables";
@@ -8,152 +8,423 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
-*{
-    font-family: 'Karla', sans-serif;
+* {
+  font-family: "Karla", sans-serif;
 }
 
-html{
+html {
   width: 100%;
   height: 100%;
 }
 
-#login{
-
+#login {
   width: 100%;
   height: 100%;
-.text-red {
-  color: $app-red !important;
-}
+  .text-red {
+    color: $lime-green !important;
+  }
 
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: url("../imgs/backs/fondo.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background:url('../imgs/backs/fondo.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  .card {
-    border-radius: 30px;
-    min-width: 70%;
-    border: 0;
-    background: transparent;
-    filter:drop-shadow(5px 5px 10px black);
-    
-    .card-header {
-      border-top-left-radius: 30px;
-      border-top-right-radius: 30px;
+    .card {
+      border-radius: 30px;
+      min-width: 400px;
+      border: 0;
       background: transparent;
-      .logo {
-        max-width: 90px;
-        display: block;
-        margin: 20px auto;
-      }
-      .listContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+      filter: drop-shadow(5px 5px 10px black);
 
-        ul {
-          padding: 0;
-          width: 100%;
-          text-align: center;
-          list-style: inside;
-          margin-bottom: 0;
+      .card-header {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background: transparent;
+        border: 0;
+        .logo {
+          max-width: 90px;
+          display: block;
+          margin: 20px auto;
+        }
+        .listContainer {
           display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          li {
-            display: inline-block;
-            a {
-              text-decoration: none;
-              color: $app-blue;
+          flex-direction: column;
+          justify-content: center;
+
+          ul {
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            list-style: inside;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li {
+              display: inline-block;
+              a {
+                text-decoration: none;
+                color: $strong-blue;
+              }
             }
           }
         }
       }
-    }
-    .card-body {
-      background: transparent;
-      border-bottom-left-radius: 30px;
-      border-bottom-right-radius: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      color: #fff;
-      width: 400px;
-      margin: 0 auto;
-
-      form{
-        min-width: 100%;
-      }
-      .row {
-        min-width: 400px;
-      }
-      .input-container {
-        background: #fff;
-        border-radius: 30px;
-        padding: 10px;
-        color: $app-blue;
-        margin: 10px;
-
-        i {
-          margin-right: 7px;
-        }
-
-        input {
-          background: transparent;
-          height: 40px;
-          border: 0;
-          width: calc(100% - 25px);
-
-          &::-webkit-input-placeholder {
-            color: $app-blue;
-            font-size: 0.8em !important;
-          }
-          &:-moz-placeholder {
-            color: $app-blue;
-            font-size: 0.8em !important;
-          }
-          &::-moz-placeholder {
-            color: $app-blue;
-            font-size: 0.8em !important;
-          }
-          &:-ms-input-placeholder {
-            color: $app-blue;
-            font-size: 0.8em !important;
-          }
-        }
-      }
-      .is-invalid{
-        border:2px solid red !important;
-      }
-      .btn-login {
-        background: $app-red;
+      .card-body {
+        background: transparent;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         color: #fff;
+        width: 400px;
+        margin: 0 auto;
+
+        form {
+          min-width: 100%;
+        }
+        .row {
+          min-width: 400px;
+        }
+        .input-container {
+          background: #fff;
+          border-radius: 30px;
+          padding: 10px;
+          color: $strong-blue;
+          margin: 10px 0;
+
+          i {
+            margin-right: 7px;
+          }
+
+          input {
+            background: transparent;
+            height: 40px;
+            border: 0;
+            width: calc(100% - 25px);
+
+            &::-webkit-input-placeholder {
+              color: $strong-blue;
+              font-size: 0.8em !important;
+            }
+            &:-moz-placeholder {
+              color: $strong-blue;
+              font-size: 0.8em !important;
+            }
+            &::-moz-placeholder {
+              color: $strong-blue;
+              font-size: 0.8em !important;
+            }
+            &:-ms-input-placeholder {
+              color: $strong-blue;
+              font-size: 0.8em !important;
+            }
+          }
+        }
+        .is-invalid {
+          border: 2px solid red !important;
+        }
+        .btn-login {
+          background: $strong-blue;
+          color: #fff;
+        }
+      }
+      .card-footer {
+        border: 0;
+        .logo-footer {
+          max-width: 120px;
+          display: block;
+          margin: 35px auto 15px;
+        }
       }
     }
   }
 }
+#register {
+  width: 100%;
+  height: 100%;
+  .text-red {
+    color: $lime-green !important;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: url("../imgs/backs/fondo.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .card {
+      border-radius: 30px;
+      min-width: 400px;
+      border: 0;
+      background: transparent;
+      filter: drop-shadow(5px 5px 10px black);
+
+      .card-header {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background: transparent;
+        border: 0;
+        .logo {
+          max-width: 90px;
+          display: block;
+          margin: 20px auto;
+        }
+        .listContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          ul {
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            list-style: inside;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li {
+              display: inline-block;
+              a {
+                text-decoration: none;
+                color: $strong-blue;
+              }
+            }
+          }
+        }
+      }
+      .card-body {
+        background: transparent;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        width: 400px;
+        margin: 0 auto;
+
+        form {
+          min-width: 100%;
+        }
+        .row {
+          min-width: 400px;
+        }
+        .input-container {
+          background: #fff;
+          border-radius: 30px;
+          padding: 10px;
+          color: $strong-blue;
+          margin: 10px 0;
+
+          i {
+            margin-right: 7px;
+          }
+
+          input {
+            background: transparent;
+            height: 40px;
+            border: 0;
+            width: calc(100% - 25px);
+
+            &::-webkit-input-placeholder {
+              color: $strong-blue;
+              font-size: 0.8em !important;
+            }
+            &:-moz-placeholder {
+              color: $strong-blue;
+              font-size: 0.8em !important;
+            }
+            &::-moz-placeholder {
+              color: $strong-blue;
+              font-size: 0.8em !important;
+            }
+            &:-ms-input-placeholder {
+              color: $strong-blue;
+              font-size: 0.8em !important;
+            }
+          }
+        }
+        .is-invalid {
+          border: 2px solid red !important;
+        }
+        .btn-login {
+          background: $strong-blue;
+          color: #fff;
+        }
+      }
+      .card-footer {
+        border: 0;
+        .logo-footer {
+          max-width: 120px;
+          display: block;
+          margin: 35px auto 15px;
+        }
+      }
+    }
+  }
+}
+#passwordReset {
+  width: 100%;
+  height: 100%;
+  .text-red {
+    color: $lime-green !important;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: url("../imgs/backs/fondo.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .card {
+      border-radius: 30px;
+      min-width: 400px;
+      border: 0;
+      background: transparent;
+      filter: drop-shadow(5px 5px 10px black);
+
+      .card-header {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background: transparent;
+        border: 0;
+        .logo {
+          max-width: 90px;
+          display: block;
+          margin: 20px auto;
+        }
+        .listContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          ul {
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            list-style: inside;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li {
+              display: inline-block;
+              a {
+                text-decoration: none;
+                color: $strong-blue;
+              }
+            }
+          }
+        }
+      }
+      .card-body {
+        background: transparent;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        width: 400px;
+        margin: 0 auto;
+
+        form {
+          min-width: 100%;
+        }
+        .row {
+          min-width: 400px;
+        }
+        .input-container {
+          background: #fff;
+          border-radius: 30px;
+          padding: 10px;
+          color: $strong-blue;
+          margin: 10px 0;
+
+          i {
+            margin-right: 7px;
+          }
+
+          input {
+            background: transparent;
+            height: 40px;
+            border: 0;
+            width: calc(100% - 25px);
+
+            &::-webkit-input-placeholder {
+              color: $strong-blue;
+              font-size: 0.8em !important;
+            }
+            &:-moz-placeholder {
+              color: $strong-blue;
+              font-size: 0.8em !important;
+            }
+            &::-moz-placeholder {
+              color: $strong-blue;
+              font-size: 0.8em !important;
+            }
+            &:-ms-input-placeholder {
+              color: $strong-blue;
+              font-size: 0.8em !important;
+            }
+          }
+        }
+        .is-invalid {
+          border: 2px solid red !important;
+        }
+        .btn-login {
+          background: $strong-blue;
+          color: #fff;
+        }
+      }
+      .card-footer {
+        border: 0;
+        .logo-footer {
+          max-width: 120px;
+          display: block;
+          margin: 35px auto 15px;
+        }
+      }
+    }
+  }
 }
 #admin {
   overflow-x: hidden;
 
-  .container-fluid{
-      .card{
-        border-radius: 0.85rem;
-         .card-header{
-             background: transparent;
-         }
-          .card-body{
-          }
+  .container-fluid {
+    .card {
+      border-radius: 0.85rem;
+      .card-header {
+        background: transparent;
       }
+      .card-body {
+      }
+    }
   }
 }
 
@@ -181,8 +452,8 @@ html{
     background: transparent !important;
 
     ul {
-        padding: 0;
-        list-style: none;
+      padding: 0;
+      list-style: none;
       li {
         a {
           font-size: 1.2em !important;
@@ -195,14 +466,14 @@ html{
             color: #fff !important;
           }
 
-          &:hover{
-              background: $dark-blue !important;
-              border-left: 4px solid $lime-green;
-          }
-        }
-        a.active{
+          &:hover {
             background: $dark-blue !important;
             border-left: 4px solid $lime-green;
+          }
+        }
+        a.active {
+          background: $dark-blue !important;
+          border-left: 4px solid $lime-green;
         }
       }
     }
@@ -219,30 +490,30 @@ html{
   }
 }
 
-.navbar{
-    #menu-toggle{
-        i{
-            color: $dark-blue !important;
-            font-size: 2em !important;
-        }
+.navbar {
+  #menu-toggle {
+    i {
+      color: $dark-blue !important;
+      font-size: 2em !important;
     }
-    .navbar-nav{
-        .nav-item{
-            margin: 0px 8px;
-            position: relative;
-            a{
-                i{
-                    color: $dark-blue !important;
-                    font-size: 1.7em !important;
-                }
-            }
-            .badge{
-                position: absolute;
-                top: 4px;
-                right: 4px;
-            }
+  }
+  .navbar-nav {
+    .nav-item {
+      margin: 0px 8px;
+      position: relative;
+      a {
+        i {
+          color: $dark-blue !important;
+          font-size: 1.7em !important;
         }
+      }
+      .badge {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+      }
     }
+  }
 }
 
 #page-content-wrapper {

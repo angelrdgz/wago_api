@@ -9732,7 +9732,7 @@ html {
   height: 100%;
 }
 #login .text-red {
-  color: #EC1C24 !important;
+  color: #4BB148 !important;
 }
 #login .content {
   display: flex;
@@ -9745,7 +9745,7 @@ html {
 }
 #login .content .card {
   border-radius: 30px;
-  min-width: 70%;
+  min-width: 400px;
   border: 0;
   background: transparent;
   -webkit-filter: drop-shadow(5px 5px 10px black);
@@ -9755,6 +9755,7 @@ html {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   background: transparent;
+  border: 0;
 }
 #login .content .card .card-header .logo {
   max-width: 90px;
@@ -9781,7 +9782,7 @@ html {
 }
 #login .content .card .card-header .listContainer ul li a {
   text-decoration: none;
-  color: #2B388F;
+  color: #0075bf;
 }
 #login .content .card .card-body {
   background: transparent;
@@ -9805,8 +9806,8 @@ html {
   background: #fff;
   border-radius: 30px;
   padding: 10px;
-  color: #2B388F;
-  margin: 10px;
+  color: #0075bf;
+  margin: 10px 0;
 }
 #login .content .card .card-body .input-container i {
   margin-right: 7px;
@@ -9818,27 +9819,281 @@ html {
   width: calc(100% - 25px);
 }
 #login .content .card .card-body .input-container input::-webkit-input-placeholder {
-  color: #2B388F;
+  color: #0075bf;
   font-size: 0.8em !important;
 }
 #login .content .card .card-body .input-container input:-moz-placeholder {
-  color: #2B388F;
+  color: #0075bf;
   font-size: 0.8em !important;
 }
 #login .content .card .card-body .input-container input::-moz-placeholder {
-  color: #2B388F;
+  color: #0075bf;
   font-size: 0.8em !important;
 }
 #login .content .card .card-body .input-container input:-ms-input-placeholder {
-  color: #2B388F;
+  color: #0075bf;
   font-size: 0.8em !important;
 }
 #login .content .card .card-body .is-invalid {
   border: 2px solid red !important;
 }
 #login .content .card .card-body .btn-login {
-  background: #EC1C24;
+  background: #0075bf;
   color: #fff;
+}
+#login .content .card .card-footer {
+  border: 0;
+}
+#login .content .card .card-footer .logo-footer {
+  max-width: 120px;
+  display: block;
+  margin: 35px auto 15px;
+}
+
+#register {
+  width: 100%;
+  height: 100%;
+}
+#register .text-red {
+  color: #4BB148 !important;
+}
+#register .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: url("../imgs/backs/fondo.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+#register .content .card {
+  border-radius: 30px;
+  min-width: 400px;
+  border: 0;
+  background: transparent;
+  -webkit-filter: drop-shadow(5px 5px 10px black);
+          filter: drop-shadow(5px 5px 10px black);
+}
+#register .content .card .card-header {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: transparent;
+  border: 0;
+}
+#register .content .card .card-header .logo {
+  max-width: 90px;
+  display: block;
+  margin: 20px auto;
+}
+#register .content .card .card-header .listContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#register .content .card .card-header .listContainer ul {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  list-style: inside;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#register .content .card .card-header .listContainer ul li {
+  display: inline-block;
+}
+#register .content .card .card-header .listContainer ul li a {
+  text-decoration: none;
+  color: #0075bf;
+}
+#register .content .card .card-body {
+  background: transparent;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  width: 400px;
+  margin: 0 auto;
+}
+#register .content .card .card-body form {
+  min-width: 100%;
+}
+#register .content .card .card-body .row {
+  min-width: 400px;
+}
+#register .content .card .card-body .input-container {
+  background: #fff;
+  border-radius: 30px;
+  padding: 10px;
+  color: #0075bf;
+  margin: 10px 0;
+}
+#register .content .card .card-body .input-container i {
+  margin-right: 7px;
+}
+#register .content .card .card-body .input-container input {
+  background: transparent;
+  height: 40px;
+  border: 0;
+  width: calc(100% - 25px);
+}
+#register .content .card .card-body .input-container input::-webkit-input-placeholder {
+  color: #0075bf;
+  font-size: 0.8em !important;
+}
+#register .content .card .card-body .input-container input:-moz-placeholder {
+  color: #0075bf;
+  font-size: 0.8em !important;
+}
+#register .content .card .card-body .input-container input::-moz-placeholder {
+  color: #0075bf;
+  font-size: 0.8em !important;
+}
+#register .content .card .card-body .input-container input:-ms-input-placeholder {
+  color: #0075bf;
+  font-size: 0.8em !important;
+}
+#register .content .card .card-body .is-invalid {
+  border: 2px solid red !important;
+}
+#register .content .card .card-body .btn-login {
+  background: #0075bf;
+  color: #fff;
+}
+#register .content .card .card-footer {
+  border: 0;
+}
+#register .content .card .card-footer .logo-footer {
+  max-width: 120px;
+  display: block;
+  margin: 35px auto 15px;
+}
+
+#passwordReset {
+  width: 100%;
+  height: 100%;
+}
+#passwordReset .text-red {
+  color: #4BB148 !important;
+}
+#passwordReset .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: url("../imgs/backs/fondo.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+#passwordReset .content .card {
+  border-radius: 30px;
+  min-width: 400px;
+  border: 0;
+  background: transparent;
+  -webkit-filter: drop-shadow(5px 5px 10px black);
+          filter: drop-shadow(5px 5px 10px black);
+}
+#passwordReset .content .card .card-header {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: transparent;
+  border: 0;
+}
+#passwordReset .content .card .card-header .logo {
+  max-width: 90px;
+  display: block;
+  margin: 20px auto;
+}
+#passwordReset .content .card .card-header .listContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#passwordReset .content .card .card-header .listContainer ul {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  list-style: inside;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#passwordReset .content .card .card-header .listContainer ul li {
+  display: inline-block;
+}
+#passwordReset .content .card .card-header .listContainer ul li a {
+  text-decoration: none;
+  color: #0075bf;
+}
+#passwordReset .content .card .card-body {
+  background: transparent;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  width: 400px;
+  margin: 0 auto;
+}
+#passwordReset .content .card .card-body form {
+  min-width: 100%;
+}
+#passwordReset .content .card .card-body .row {
+  min-width: 400px;
+}
+#passwordReset .content .card .card-body .input-container {
+  background: #fff;
+  border-radius: 30px;
+  padding: 10px;
+  color: #0075bf;
+  margin: 10px 0;
+}
+#passwordReset .content .card .card-body .input-container i {
+  margin-right: 7px;
+}
+#passwordReset .content .card .card-body .input-container input {
+  background: transparent;
+  height: 40px;
+  border: 0;
+  width: calc(100% - 25px);
+}
+#passwordReset .content .card .card-body .input-container input::-webkit-input-placeholder {
+  color: #0075bf;
+  font-size: 0.8em !important;
+}
+#passwordReset .content .card .card-body .input-container input:-moz-placeholder {
+  color: #0075bf;
+  font-size: 0.8em !important;
+}
+#passwordReset .content .card .card-body .input-container input::-moz-placeholder {
+  color: #0075bf;
+  font-size: 0.8em !important;
+}
+#passwordReset .content .card .card-body .input-container input:-ms-input-placeholder {
+  color: #0075bf;
+  font-size: 0.8em !important;
+}
+#passwordReset .content .card .card-body .is-invalid {
+  border: 2px solid red !important;
+}
+#passwordReset .content .card .card-body .btn-login {
+  background: #0075bf;
+  color: #fff;
+}
+#passwordReset .content .card .card-footer {
+  border: 0;
+}
+#passwordReset .content .card .card-footer .logo-footer {
+  max-width: 120px;
+  display: block;
+  margin: 35px auto 15px;
 }
 
 #admin {

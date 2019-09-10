@@ -1,77 +1,82 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+</head>
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+<body id="register">
+<div class="content">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="assets/imgs/logoship2go.png" class="logo" alt="">
                 </div>
             </div>
         </div>
+        <div class="card-body">
+            <h5 class="card-title"><span class="text-red">¡crea tu cuenta</span> fácil!</h5>
+            <div class="row">
+                <div class="col-sm-12">
+                        <!--<div class="form-check form-check-inline text-center">
+                            <input class="form-check-input" type="radio" checked value="0" name="business"id="inlineRadio1">
+                            <label class="form-check-label" for="inlineRadio1">Independiente</label>
+                        </div>
+                        <div class="form-check form-check-inline text-center">
+                            <input class="form-check-input" type="radio" value="1" name="business" id="inlineRadio2">
+                            <label class="form-check-label" for="inlineRadio2">Empresarial</label>
+                        </div>-->
+                        <div class="input-container">
+                            <i class="far fa-user"></i>
+                            <input class="input-field" type="text" placeholder="Nombre completo" placement="right">
+                        </div>
+                        <div class="input-container">
+                            <i class="fas fa-mobile-alt"></i>
+                            <input class="input-field" type="text" placeholder="Teléfono" name="phone" >
+                        </div>
+                        <div class="input-container">
+                            <i class="fas fa-envelope"></i>
+                            <input class="input-field" type="text" placeholder="Email"
+                                name="email">
+                        </div>
+                        <div class="input-container">
+                            <i class="fas fa-lock-open"></i>
+                            <input class="input-field" type="password" 
+                                placeholder="Contraseña" name="password">
+                        </div>
+                        <div class="input-container" >
+                            <i class="fas fa-check"></i>
+                            <input class="input-field" type="password" 
+                                placeholder="Confirmar contraseña" name="password_confirm">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input"
+                                id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Estoy de acuerdo con los <a
+                                    href="">Terminos
+                                    y condiciones</a> de uso de <a href="ship2go.com">ship2go.com</a></label>
+                        </div>
+                </div>
+            </div>
+            <button class="btn btn-login text-uppercase rounded-pill" type="submit">
+                    Registrar
+                    <i class="fas fa-circle-notch fa-spin"></i>
+            </button> 
+        </div>
     </div>
 </div>
-@endsection
+</body>
+
+</html>
